@@ -1,0 +1,755 @@
+body
+{
+	margin:0;
+	padding:0;
+}
+#bod
+{
+	width:100%;
+	height:100%;
+	background-color:white;
+	padding:0;
+	margin:0;
+}
+
+
+#mainDiv
+{
+	top:0;
+	border-style:ridge;
+	overflow: hidden;
+	position: fixed;
+	width:100%;
+	background-color:white;
+	display:flex;
+	flex-direction:row;
+	padding:0px 30px;
+	z-index:2;
+}
+#mainDiv #logoDiv
+{
+	display:flex;
+	justify-content:flex-start;
+	margin:10px;
+	flex:1;
+}
+#mainDiv #headers
+{
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	flex:1;
+}
+#headers a
+{
+	text-decoration: none;
+	position: relative;
+}
+
+	
+#headers a:before 
+{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  background-color: #9900cc;
+  -webkit-transform: scaleX(0);
+  transition: transform 0.7s   ;
+}
+#headers a:hover:before 
+{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#dropdown 
+{
+  position: relative;
+  display: inline-block;
+}
+
+#dropdown-content 
+{
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 100px;
+  padding: 12px 16px;
+  
+}
+
+#dropdown:hover #dropdown-content 
+{
+  display: block;
+}
+
+#gifDiv
+{
+	width:100%;
+	height:500px;
+}
+
+#gifDiv #gif
+{
+
+	margin: -2% 10% -10% 51%;
+	
+}
+
+#gifDiv #subDiv1
+{
+
+	margin-top:-25%;
+	margin-left:15%;
+	margin-right:50%;
+}
+#subDiv1 #text
+{
+	color:#660099;
+}
+#subDiv1 #diff
+{
+	color:#808080;
+}
+#subDiv1 #caption
+{
+	color:#808080;
+}
+
+#help
+{
+	width:100%;
+	background-color:rgba(0,0,128,0.5);
+	 background: url(images/bulding.jpg);
+	 background-attachment:fixed;
+	 background-repeat:no-repeat;
+	 background-size:cover;
+}
+#help #help1
+{
+background-image:url("D:\javaScript_hash\images\bulding.jpg");
+text-align:center;
+color:white;
+padding-top:3%;
+padding-bottom:3%;
+}
+#client
+{
+	width:100%;
+	background-color:white;
+}
+#client #ourWork
+{
+	text-align:center;
+}
+
+#client #stat
+{
+	text-align:center;
+	color:#808080;
+}
+#client #detail
+{
+	height:400px;
+}
+#client #detail .wrap-dat
+{
+	display:flex;
+	justify-content:space-evenly;
+}
+#client #detail .wrap-dat1
+{
+	display:flex;
+	justify-content:space-evenly;
+	
+}
+#client #detail #detail1
+{
+	text-align:center;
+	flex:1;
+}
+
+#p3
+{
+	color:red;
+	font-size:40px;
+	display:block;
+
+}
+#client #detail #detail1 #cap1
+{
+	color:#808080;
+}
+#client #detail #detail2
+{
+	text-align:center;
+	flex:1;
+}
+#client #detail #detail2
+{
+	text-align:center;
+	flex:1;
+}
+#client #detail #detail2 #d2
+{
+	
+	color:#80ffff;
+	font-size:40px;
+	display:block;
+}
+#client #detail #detail2 #cap2
+{	
+	color:#808080;
+}
+#client #detail #detail3
+{
+	text-align:center;
+	flex:1;
+}
+#client #detail #detail3 #d3
+{
+	color:#000099;
+	font-size:40px;
+	display:block;
+}
+#client #detail #detail3 #cap3
+{
+	color:#808080;
+}
+#client #detail #detail4
+{
+	text-align:center;
+	flex:1;
+}
+#client #detail #detail4 #d4
+{
+	color:red;
+	font-size:40px;
+	display:block;
+}
+#client #detail #detail4 #cap4
+{	
+	color:#808080;
+}
+#client #detail #detail5
+{
+	text-align:center;
+	flex:1;
+}
+#client #detail #detail5 #d5
+{
+	color:#ffff00;
+	font-size:40px;
+	display:block;
+}
+#client #detail #detail5 #cap5
+{	
+	color:#808080;
+}
+#client #detail #detail6
+{
+	text-align:center;
+	flex:1;
+}
+#client #detail #detail6 #d6
+{
+	color:red;
+	font-size:40px;
+	display:block
+}
+#client #detail #detail6 #cap6
+{
+	color:#808080;
+}
+
+
+
+
+
+
+#client #button
+{
+	margin-left:45%;
+	border-radius:10%;
+	background-color:#330066;
+	color:white;
+	padding:2% 4% 2% 4%;
+	display:flex;
+	overflow:hidden;
+}
+button#button span {
+    display: inline-block;
+	 transition: transform .2s ;
+}
+button#button:hover .hover {
+    transform: translateX(120px);
+    transition: transform .2s ;
+}
+span.ar
+{
+	 transform: translateX(-120px);
+    position: relative;
+}
+
+button#button:hover .ar
+{
+    transform: translateX(35px);    
+}
+
+
+
+
+
+
+
+
+#cloud
+{
+	width:100%;
+	background-color:#fae8fd;
+}
+#cloud #love
+{
+	text-align:center;
+}
+#cloud #cloudim
+{
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+}
+
+#grow
+{
+	width:100%;
+	background: url(images/people.jpg);
+	 background-attachment:fixed;
+	 background-repeat:no-repeat;
+	 background-size:cover;
+}
+#grow h2
+{
+	padding-top:2%;
+	padding-left:40%;
+	color:white;
+}
+#grow #button1
+{
+	margin-top:3%;
+	margin-left:45%;
+	border-radius:10%;
+	background-color:#330066;
+	color:white;
+	padding:2% 4% 2% 4%;
+	display:flex;
+	overflow:hidden;
+}
+#grow #button1 span {
+    display: inline-block;
+	 transition: transform .2s ;
+}
+#grow #button1:hover .hover1 {
+    transform: translateX(120px);
+    transition: transform .2s ;
+}
+span.ar1
+{
+	 transform: translateX(-120px);
+    position: relative;
+}
+
+#grow #button1:hover .ar1
+{
+    transform: translateX(35px);    
+}
+
+
+
+
+
+
+
+
+
+#services
+{
+	width:100%;
+}
+#services h2
+{
+	text-align:center;
+}
+.wrap-ser1
+{
+	flex:1;
+	flex-direction: row;
+	display:flex;
+	justify-content:space-evenly;
+}
+.wrap-ser2
+{
+	flex:1;
+	flex-direction: row;
+	display:flex;
+	justify-content:space-evenly;
+}
+
+#services #block1
+{
+	border-width:1px;
+	border-radius:3%;
+	border-style: solid;
+	border-color:#808080;
+	width:25%;
+	margin:2%;
+}
+#services #block1 #blockchain
+{
+	margin-left:40%;
+	margin-top:10%;
+}
+#services #block1 h4
+{
+	text-align:center;
+}
+#services #block1 h5
+{
+	text-align:center;
+	color:#808080;
+}
+#services #block2
+{
+	border-width:1px;
+	border-radius:3%;
+	border-style: solid;
+	border-color:#808080;
+	width:25%;
+	margin:2%;
+}
+#services #block2 #divOpps
+{
+	margin-left:40%;
+	margin-top:10%;
+}
+#services #block2 h4
+{
+	text-align:center;
+}
+#services #block2 h5
+{
+	text-align:center;
+}
+#services #block3
+{
+	border-width:1px;
+	border-radius:3%;
+	border-style: solid;
+	border-color:#808080;
+	width:25%;
+	margin:2%;
+}
+#services #block3 #data
+{
+	margin-left:40%;
+	margin-top:10%;
+}
+#services #block3 h4
+{
+	text-align:center;
+}
+#services #block3 h5
+{
+	text-align:center;
+}
+#services #block4
+{
+	border-width:1px;
+	border-radius:3%;
+	border-style: solid;
+	border-color:#808080;
+	width:25%;
+	margin:2%;
+}
+#services #block4 #cloudadop
+{
+	margin-left:40%;
+	margin-top:10%;
+}
+#services #block4 h4
+{
+	text-align:center;
+}
+#services #block4 h5
+{
+	text-align:center;
+}
+#services #block5
+{
+	border-width:1px;
+	border-radius:3%;
+	border-style: solid;
+	border-color:#808080;
+	width:25%;
+	margin:2%;
+}
+#services #block5 #ux
+{
+	margin-left:40%;
+	margin-top:10%;
+}
+#services #block5 h4
+{
+	text-align:center;
+}
+#services #block5 h5
+{
+	text-align:center;
+}
+#services #block6
+{
+	border-width:1px;
+	border-radius:3%;
+	border-style: solid;
+	border-color:#808080;
+	width:25%;
+	margin:2%;
+}
+#services #block6 #Mobility
+{
+	margin-left:40%;
+	margin-top:10%;
+}
+#services #block6 h4
+{
+	text-align:center;
+}
+#services #block6 h5
+{
+	text-align:center;
+}
+
+@keyframes bounce {
+	{
+		
+		transform: translateY(0);
+	}
+
+	40% {
+		
+		transform: translateY(-10px);
+	}
+
+}
+#services #block1:hover,#block2:hover,#block3:hover,#block4:hover,#block5:hover,#block6:hover
+{
+	background-color:#330066;
+	animation: bounce 1s;
+	color:white;
+}
+#product 
+{
+	width:100%;
+}
+#product h2
+{
+	text-align:center;
+}
+#wrap
+{
+	
+	flex:1;
+	flex-direction: column;
+	display:flex;
+}
+#product #pack
+{
+	margin:auto;
+	position:relative;
+}
+#product #pack #paketo
+{	width:900px;
+    background-attachment: fixed;
+	flex:1;
+	
+}
+#text1
+{
+	top:167px;
+	flex:1;
+	position:absolute;
+	left:10px;
+	border-right:1px solid white;
+}
+#product #pack h1
+{
+	color:white;
+}
+#product #pack p
+{
+	color:white;
+	font-size:100%;
+}
+#product #pack #button4
+{
+	margin-left:4%;
+	border-radius:10%;
+	background-color:white;
+	color:#808080;
+	padding:2% 4% 2% 4%;
+	display:flex;
+	overflow:hidden;
+}
+#product #pack #button4 span 
+{
+    display: inline-block;
+	transition: transform .2s ;
+}
+#product #pack #button4:hover .hover4 {
+    transform: translateX(120px);
+    transition: transform .2s ;
+}
+span.ar4
+{
+	transform: translateX(-120px);
+    position: relative;
+}
+
+#product #pack #button4:hover .ar4
+{
+    transform: translateX(35px);    
+}
+#y
+{
+	width:100%;
+	background-attachment:fixed;
+	background: url(images/trans.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	flex-direction: row;
+}
+.cont-wrap 
+{
+	flex:1;
+	flex-direction: row;
+	display:flex;
+}
+	
+#y h2
+{
+	text-align:center;
+	flex:1
+}
+#y #dis
+{
+	background-color:white;
+	border-radius:3%;
+	flex:1;
+	margin:1%;
+}	
+#y #dis h3
+{
+	text-align:center;
+	color:#808080;
+}
+#y #dis p
+{
+	text-align:center;
+	color:#808080;
+}
+#y #dis1
+{
+	background-color:white;
+	border-radius:3%;
+	flex:1;
+	margin:1%;
+}	
+#y #dis1 h3
+{
+	text-align:center;
+	color:#808080;
+}
+#y #dis1 p
+{
+	text-align:center;
+	color:#808080;
+}
+#y #dis2
+{
+	background-color:white;
+	border-radius:3%;
+	flex:1;
+	margin:1%;
+}	
+#y #dis2 h3
+{
+	text-align:center;
+	color:#808080;
+}
+#y #dis2 p
+{
+	text-align:center;
+	color:#808080;
+}
+#business
+{
+	width:100%;
+	background-color:#f8f1f8;
+}
+#business h2
+{
+	text-align:center;
+}
+#bisim .wrap-bus1
+{
+	display:flex;
+	justify-content:space-evenly;
+}
+#bisim .wrap-bus2
+{
+	display:flex;
+	justify-content:space-evenly;
+}
+
+#join
+{
+	width:100%;
+	background: url(images/join.jpg);
+	 background-attachment:fixed;
+	 background-repeat:no-repeat;
+	 background-size:cover;
+}
+#join h2
+{
+	text-align:center;
+	color:white;
+}
+#join #button5
+{
+	margin-left:43%;
+	border-radius:10%;
+	background-color:white;
+	color:#808080;
+	padding:2% 4% 2% 4%;
+	display:flex;
+	overflow:hidden;
+}
+#join #button5 span {
+    display: inline-block;
+	 transition: transform .2s ;
+}
+#join #button5:hover .hover5 {
+    transform: translateX(120px);
+    transition: transform .2s ;
+}
+span.ar5
+{
+	transform: translateX(-120px);
+    position: relative;
+}
+
+#join #button5:hover .ar5
+{
+    transform: translateX(35px);    
+}

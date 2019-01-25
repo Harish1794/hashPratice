@@ -1,0 +1,27 @@
+<!DoCTYPE html>
+<html>
+
+<body>
+	<button type="submit" id="obj" onclick="obj1()">click</button>	
+		<script>
+		function obj1()
+		{
+			let user={
+			name:"john",
+			age:30,
+			};
+			alert(user.name);
+			
+			user["likes birds"] = true;
+			alert(user["likes birds"]);
+		}
+		
+		var key=prompt("what do u want to know about the user name or age?",'name');
+		let user={
+			name:"ander",
+			age:22,
+			};
+		alert( user[key] );
+		</script>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<input id="num">
+		<button type="submit" id ="sub" onclick="validationNum()">submit</button>
+		<p id ="test"></p>
+		
+		<script>
+		function validationNum()
+		{
+			var x = document.getElementById("num").value;
+			var text;
+			if(isNaN(x)|| x < 1 || x > 100)
+				text ="invalied input";
+			else
+			{
+				
+				text = "valied input";
+				alert("sumited");
+			}
+			
+	document.getElementById('test').innerHTML=text;
+		}
+		</script>
+	</body>
+</html>

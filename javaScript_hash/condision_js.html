@@ -1,0 +1,57 @@
+<html>
+	<body>
+	
+	<button onclick="fun()">click</button>
+	<button id="count" onclick="fun1()">count</button>
+	<button id="us" onclick="user()">show user</button>
+	<h1 id="store"></h1>
+		<script>
+			function fun()
+			{
+				var product= 'iceCream';
+				if(product ==10)
+				{
+					alert('its ice cream');
+				}
+				else
+				{
+					alert('its not ice cream');
+				}
+			}
+			function fun1()
+			{
+				const button = document.querySelector('#count');
+
+				button.addEventListener('click', event => {
+				button.innerHTML = `Click count: ${event.detail}`;
+				});
+			}
+			document.querySelector('html').onclick = function() {
+			alert('Ouch! Stop poking me!');
+			}
+			function user()
+			{
+				var button = document.querySelector('#us');
+				var header = document.querySelector('#store');
+				if(!localStorage.getItem('name'))
+				{
+					setName();
+				}
+				else
+				{
+					var storedName = localStorage.getItem('name');
+					header.textContent="hi, "+storedName;
+				}
+			}
+			
+			function setName()
+			{
+				var myName = prompt("enter the name");
+				localStorage.setItem('name',myName);
+				header.textContent="hi, "+storedName;
+			}
+			
+		</script>
+	</body>
+	
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<body>
+		<div ng-app="myapp" ng-controller="myCont">
+			{{firstName+" "+lastName}}
+		</div>
+		
+		<script>
+			var app = angular.module("myapp",[]);
+			app.controller("myCont",function($scope){
+				$scope.firstName="harish";
+				$scope.lastName="kumar";
+				});
+		</script>
+	</body> 
+</html>

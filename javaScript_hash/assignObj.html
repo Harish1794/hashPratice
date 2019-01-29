@@ -1,0 +1,15 @@
+<!DOCTYPE>
+<html>
+	<body>
+		<script>
+			let id = Symbol("id");
+				let user = {
+				  [id]: "id symbol"
+				};
+
+				let clone = Object.assign({}, user);
+
+				alert( clone[id] ); 
+		</script>
+	</body>
+</html>

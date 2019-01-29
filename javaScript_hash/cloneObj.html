@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html>
+	<body>
+		<script>
+			let user = {
+			  name: "John",
+			  age: 30
+			};
+
+			let clone = {}; 
+			
+			for (let key in user) {
+			  clone[key] = user[key];
+			}
+
+			clone.name = "Pete"; 
+					alert(user.name);
+					alert(clone.name);
+	</script>
+	</body>
+	
+</html>

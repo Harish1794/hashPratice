@@ -1,0 +1,20 @@
+<!DOCTYPE>
+<html>
+	<body>
+		<script>
+			let id = Symbol("id");
+			
+			let user=
+			{
+				name:"peter",
+				age:10,
+				[id]:123
+			};
+				for (let key in user) 
+				alert(key);
+				
+				alert("symbol: " + user[id]);
+			
+		</script>
+	</body>
+</html>

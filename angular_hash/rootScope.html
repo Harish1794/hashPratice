@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<body ng-app="rootApp">
+		<p>root color</p>
+		<h1>{{color}}</h1>
+		
+		<div ng-controller="mycont">
+			<p>controller color</p>
+			<h1>{{color}}</h1>
+		</div>
+		
+		<p> still root color is</p>
+		<h1>{{color}}</h1>
+		
+		<script>
+			var app = angular.module('rootApp', []);
+				app.run(function($rootScope){
+				$rootScope.color='blue';
+				});
+			
+				app.controller('mycont',function($scope){
+				$scope.color='red';
+				});
+		</script>
+		
+		
+		
+		
+		
+		
+		
+
+	</body>
+</html>
